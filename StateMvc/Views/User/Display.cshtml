@@ -1,0 +1,19 @@
+﻿@model DisplayVM
+
+<h1> Create User</h1>
+<div class="col-3">
+
+    <form asp-controller="User" asp-action="Index">
+        <label asp-for="SupportEmail"></label>
+        <input asp-for="SupportEmail" class="form-control" />
+        <span asp-validation-for="SupportEmail" class="text-danger"></span>
+
+        <label asp-for="CompanyName"></label>
+        <input asp-for="CompanyName" class="form-control" />
+        <span asp-validation-for="CompanyName" class="text-danger"></span>
+
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
+    </form>
+</div>
+
+<div asp-validation-summary="All"></div>
